@@ -48,4 +48,31 @@ $(document).ready(function(){
 
     listarEstilo();
     //Chama a função listarEstilo para buscar e exibir os dados
+
+    function deleteEstilo(id){
+
+        var confirmarDelete = confirm("Deseja excluir esse estilo musical?");
+        if (confirmarDelete == true){
+
+            $.ajax({
+                url: "http://localhost:8080/api/estilo-musical/" + id,
+                type: "DELETE",
+                dataType: "JSON",
+                success: function(data){
+                    console.log("Estilo musical removido com sucesso!", data);
+                    window.location.href = "index.html";
+                },
+                error: function(error){
+                    console.log("Erro ao excluir estilo musical!", error);
+                }
+            });
+
+        }
+    }
+
+    document.getElementById("deleteBtn").addEventListener("click", function(){
+
+        deleteEstilo(id);
+
+    });
 });
