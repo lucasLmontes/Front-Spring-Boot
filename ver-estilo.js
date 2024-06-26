@@ -45,7 +45,6 @@ $(document).ready(function(){
             }
         });
     }
-
     listarEstilo();
     //Chama a função listarEstilo para buscar e exibir os dados
 
@@ -60,10 +59,12 @@ $(document).ready(function(){
                 dataType: "JSON",
                 success: function(data){
                     console.log("Estilo musical removido com sucesso!", data);
+                    alert("Estilo musical removido com sucesso!");
                     window.location.href = "index.html";
                 },
                 error: function(error){
-                    console.log("Erro ao excluir estilo musical!", error);
+                    console.error("Erro ao remover estilo musical!", error);
+                    alert("Erro ao remover estilo musical!");
                 }
             });
 

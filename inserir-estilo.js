@@ -22,7 +22,6 @@ $(document).ready(function(){
             url: "http://localhost:8080/api/estilo-musical",
             type: "POST",
             dataType: "JSON",
-            contentType: "application/json",
             data: JSON.stringify(formData),
             success: function(data){
                 console.log("Estilo musical inserido com sucesso!", data);
@@ -37,5 +36,3 @@ $(document).ready(function(){
         });
     });
 });
-
-

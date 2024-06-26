@@ -12,16 +12,34 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="#">Página Inicial</a></li>
+                <li class="nav-right"><a href="pg-inicial.html">Sair</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Academify</h1>
+        <hr>
+        <h3>Estilos Musicais</h3>
+        <br>
+        <h4>Bem-vindo!</h4>
+        <p style="font-size: 16px;">
+            Quer saber mais sobre cada estilo musical? É só interagir com as blocos abaixo!</p>
         <div id="retorna-estilos"></div>
-        <h3>Bem-vindo!</h3>
-        <p>Veja as respectivas listas de estilos musicais e bandas clicando nos botões acima.</p>
+        <a href="inserir-estilo.html" class="btn custom-button" role="button">Adicionar Estilo Musical</a>
+        <br>
+        <hr>
+        <h3>Bandas</h3>
+        <p style="font-size: 16px;">
+            Quer saber mais sobre cada banda? É só clicar em "Ver Bandas"!</p>
+        <div class="band">
+            <a href="listar-bandas.html">Ver Bandas</a>
+            <hr>
+            <p style="font-size: 18px;">Total: <div id="total-bandas"></div></p>
+        </div>
+        <a href="inserir-banda.html" class="btn custom-button" role="button">Adicionar Banda</a>
+        <hr>
         <p class="quote">
             <span class="quote-text">
                 O homem que não tem a música dentro de si e que não se emociona com um concerto de doces 

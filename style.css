@@ -49,7 +49,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: left;
 }
 
 nav ul li {
@@ -57,7 +56,6 @@ nav ul li {
 }
 
 nav ul li a {
-    background-color: #fcaa12;
     color: #2c2c2c;
     text-decoration: none;
     font-weight: bold;
@@ -65,9 +63,13 @@ nav ul li a {
     transition: background-color 0.3s ease /* Transição suave da cor de fundo */
 }
 
+nav ul li.nav-right {
+    margin-left: auto;
+}
+
 nav ul li a:hover {
-    background-color: #da9412;
-    color: #000000;
+    background-color: #dfa53a;
+    color: #242424;
 }
 
 main {
@@ -80,11 +82,18 @@ main {
     flex: 1;
 }
 
+main h2.bold {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
 .box {
     position: relative;
     display: inline-block;
-    margin: 30px 20px; /* Ajuste a margem conforme desejado */
-    padding: 110px;
+    margin: 30px 20px;
+    padding: 90px;
     background-color: rgb(236, 211, 128);
     max-width: 300px;
     color: #2c2c2c;
@@ -101,6 +110,31 @@ main {
     transform: scale(1.1);
 }
 
+.band {
+    position: relative;
+    margin: 20px 20px;
+    padding: 25px;
+    background-color: rgb(245, 245, 245);
+    max-width: 350px;
+    color: #2c2c2c;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(22, 22, 22, 0.5);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.band a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #e6a225;
+    transition: color 0.3s ease;
+}
+
+.band a:hover {
+    color: #b17a15;
+}
 
 .btn {
     border: none;
@@ -208,4 +242,88 @@ hr {
 .attribute-value {
     font-style: italic;
     color: #888;
+}
+
+/* index */
+.quadro {
+    position: relative;
+}
+
+.quadro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-image: url("https://i0.wp.com/www.sabra.org.br/site/wp-content/uploads/2020/04/instrumentos-musicais-voce-sabe-quais-sao-os-mais-tocados-no-mundo-20191202180617.jpg.jpg?fit=800%2C600&ssl=1");
+    background-size: cover;
+    background-position: right;
+}
+
+.right-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    background: rgb(253, 253, 253);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.right-container h1, .right-container h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.right-container p.count {
+    margin-top: 40px;
+    display: inline;
+    color: #575656;
+    font-style: italic;
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+.total-count {
+    margin-left: 80px;
+    font-size: 18px;
+    font-style: italic;
+    color: #575656;
+}
+
+.right-container .sel {
+    background-color: #e7e7e7;
+    width: 90%;
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 8px;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-container a{
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #e99b09;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-container a:hover {
+    background-color: #bb7f10;
+    color: rgb(245, 245, 245);
 }
