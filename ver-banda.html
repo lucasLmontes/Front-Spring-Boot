@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academify - Detalhes da Banda</title>
+    <link href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li class="nav-right"><a href="pg-inicial.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="estilo-details">
+            
+            <h2 class="estilo-title" id="get-nome"></h2>
+
+            <h3 class="estilo-subtitle" id="get-estilo"></h3>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">Quantidade de Músicas:</span>
+                <span class="attribute-value" id="get-quantidadeMusicas"></span>
+            </div>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">Data de Criação:</span>
+                <span class="attribute-value" id="get-dataCriacao"></span>
+            </div>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">Data de Dissolução:</span>
+                <span class="attribute-value" id="get-dataDissolucao"></span>
+            </div>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">País de Origem:</span>
+                <span class="attribute-value" id="get-paisOrigem"></span>
+            </div>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">Registro da Banda:</span>
+                <span class="attribute-value" id="get-registroBanda"></span>
+            </div>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">Quantidade de Integrantes:</span>
+                <span class="attribute-value" id="get-quantidadeIntegrantes"></span>
+            </div>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">Single de Destaque:</span>
+                <span class="attribute-value" id="get-singleDestaque"></span>
+            </div>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">Álbum de Destaque:</span>
+                <span class="attribute-value" id="get-albumDestaque"></span>
+            </div>
+
+            <div class="estilo-attribute">
+                <span class="attribute-label">Atividade da Banda:</span>
+                <span class="attribute-value" id="get-atividadeBanda"></span>
+            </div>
+            <br>
+            <a href="editar-banda.html" class="btn custom-button" role="button">Editar</a>
+            <button id="deleteBtn" class="btn return-button">Excluir</button>
+            <hr>
+            <a href="listar-bandas.html" class="btn return-button" role="button">Voltar</a>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <a href="https://github.com/lucasLmontes/Front-Spring-Boot" target="_blank">
+            <img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="viaGit" style="width: 50px;">
+        </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="ver-banda.js"></script>
+</body>
+</html>

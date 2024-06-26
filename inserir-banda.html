@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academify</title>
+    <link href="lib/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li class="nav-right"><a href="pg-inicial.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="bandaForm" action="listar-bandas.html">
+            <div class="form-group">
+                <label for="input-nome">Nome:</label>
+                <input type="text" id="input-nome" class="form-control" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <label for="input-estiloMusical">Estilo Musical:</label>
+                <select id="input-estiloMusical" class="form-control">
+                    <!-- Estilos Musicais serão carregados dinamicamente -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="input-quantidadeMusicas">Quantidade de Músicas:</label>
+                <input type="number" id="input-quantidadeMusicas" class="form-control" placeholder="Quantidade de Músicas">
+            </div>
+            <div class="form-group">
+                <label for="input-dataCriacao">Data de Criação:</label>
+                <input type="date" id="input-dataCriacao" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="input-dataDissolucao">Data de Dissolução (se aplicável):</label>
+                <input type="date" id="input-dataDissolucao" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="input-paisOrigem">País de Origem:</label>
+                <input type="text" id="input-paisOrigem" class="form-control" placeholder="País de Origem">
+            </div>
+            <div class="form-group">
+                <label for="input-registroBanda">Registro da Banda:</label>
+                <input type="text" id="input-registroBanda" class="form-control" placeholder="Registro da Banda">
+            </div>
+            <div class="form-group">
+                <label for="input-quantidadeIntegrantes">Quantidade de Integrantes:</label>
+                <input type="number" id="input-quantidadeIntegrantes" class="form-control" placeholder="Quantidade de Integrantes">
+            </div>
+            <div class="form-group">
+                <label for="input-singleDestaque">Single de Destaque:</label>
+                <input type="text" id="input-singleDestaque" class="form-control" placeholder="Single de Destaque">
+            </div>
+            <div class="form-group">
+                <label for="input-albumDestaque">Álbum de Destaque:</label>
+                <input type="text" id="input-albumDestaque" class="form-control" placeholder="Álbum de Destaque">
+            </div>
+            <hr>
+            <a href="listar-bandas.html" class="btn return-button" role="button">Voltar</a>
+            <button type="submit" class="btn custom-button">Salvar</button>
+        </form>
+    </main>
+    <footer>
+        <a href="https://github.com/lucasLmontes/Front-Spring-Boot" target="_blank">
+            <img src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="viaGit" style="width: 50px;">
+        </a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="lib/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="inserir-banda.js"></script>
+</body>
+</html>
